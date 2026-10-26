@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Entrada de stock | Botillería</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/inventario.css" rel="stylesheet">
+</head>
+<body>
+<nav class="bnav"><a href="index.html"><i>🏠</i>Inicio</a><a href="nueva-venta.html"><i>🛒</i>Caja</a><a href="productos.html"><i>📦</i>Productos</a><a href="stock-actual.html"><i>📊</i>Stock</a><a href="reporte-ventas.html"><i>📈</i>Reportes</a></nav><script>document.querySelectorAll(".bnav a").forEach(function(a){if(location.pathname.endsWith(a.getAttribute("href")))a.classList.add("on")})</script><main class="container-fluid pb-5">
+<div class="topbar">🍺 <b>Botillería</b><span class="ms-auto avatar">A</span></div><div class="d-flex justify-content-between align-items-center mb-3"><h1 class="h3 m-0">Registrar entrada de stock</h1><span class="badge bg-secondary">HU-07</span></div><div class="col-md-6"><div class="card shadow-sm mb-3"><div class="card-body"><div class="mb-3"><label class="form-label" for="cb">Código de barras</label><input type="text" id="cb" class="form-control" placeholder="Escanea o digita el código"></div><div class="mb-3"><label class="form-label" for="pr">Producto</label><input type="text" id="pr" class="form-control" placeholder="Se completa al escanear"></div><div class="mb-3"><label class="form-label" for="q">Cantidad que ingresa</label><input type="number" id="q" class="form-control" placeholder="0"></div><div class="mb-3"><label class="form-label" for="m">Motivo / nota</label><input type="text" id="m" class="form-control" placeholder="Ej: reposición"></div><button type="button" class="btn btn-acc">Registrar entrada</button></div></div></div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
