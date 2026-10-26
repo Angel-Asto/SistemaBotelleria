@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Productos más/menos vendidos | Botillería</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/reportes.css" rel="stylesheet">
+</head>
+<body>
+<nav class="bnav"><a href="index.html"><i>🏠</i>Inicio</a><a href="nueva-venta.html"><i>🛒</i>Caja</a><a href="productos.html"><i>📦</i>Productos</a><a href="stock-actual.html"><i>📊</i>Stock</a><a href="reporte-ventas.html"><i>📈</i>Reportes</a></nav><script>document.querySelectorAll(".bnav a").forEach(function(a){if(location.pathname.endsWith(a.getAttribute("href")))a.classList.add("on")})</script><main class="container-fluid pb-5">
+<div class="topbar">🍺 <b>Botillería</b><span class="ms-auto avatar">A</span></div><div class="d-flex justify-content-between align-items-center mb-3"><h1 class="h3 m-0">Productos más y menos vendidos</h1><span class="badge bg-secondary">HU-25</span></div><div class="row g-3"><div class="col-md-6"><div class="card shadow-sm mb-3"><div class="card-body"><h2 class="h5 text-success">Más vendidos</h2><div class="table-responsive"><table class="table table-striped align-middle"><thead><tr><th>Producto</th><th>Unidades</th></tr></thead><tbody><tr><td>Cerveza Cristal 470cc</td><td>212</td></tr><tr><td>Pan Marraqueta</td><td>180</td></tr><tr><td>Bebida Cola 1,5L</td><td>143</td></tr></tbody></table></div></div></div></div><div class="col-md-6"><div class="card shadow-sm mb-3"><div class="card-body"><h2 class="h5 text-danger">Menos vendidos</h2><div class="table-responsive"><table class="table table-striped align-middle"><thead><tr><th>Producto</th><th>Unidades</th></tr></thead><tbody><tr><td>Vino Reservado 750cc</td><td>4</td></tr><tr><td>Pisco Especial 1L</td><td>6</td></tr><tr><td>Ron Añejo 750cc</td><td>7</td></tr></tbody></table></div></div></div></div></div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
