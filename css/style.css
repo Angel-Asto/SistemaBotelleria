@@ -1,0 +1,58 @@
+/* Estilos de las pantallas de acceso (iniciar sesión y crear cuenta) */
+:root {
+  --color-principal: #0d6efd;
+  --color-principal-oscuro: #0a4fb5;
+  --color-fondo: #f3f5f9;
+}
+
+.acceso-body {
+  background: linear-gradient(135deg, var(--color-fondo) 0%, #dfe6f1 100%);
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+.acceso-card {
+  border: none;
+  border-top: 5px solid var(--color-principal);
+  border-radius: 12px;
+}
+
+.acceso-card h1 {
+  color: var(--color-principal-oscuro);
+  font-weight: 700;
+}
+
+.acceso-card .form-control:focus,
+.acceso-card .form-select:focus {
+  border-color: var(--color-principal);
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.08);
+}
+
+.btn-acceso {
+  background-color: var(--color-principal);
+  border-color: var(--color-principal);
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-acceso:hover,
+.btn-acceso:focus {
+  background-color: var(--color-principal-oscuro);
+  border-color: var(--color-principal-oscuro);
+  color: #fff;
+}
+
+.acceso-card a {
+  color: var(--color-principal-oscuro);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.acceso-card a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  .acceso-card .card-body {
+    padding: 1.5rem !important;
+  }
+}
